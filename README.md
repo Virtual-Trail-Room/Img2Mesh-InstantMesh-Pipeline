@@ -48,7 +48,7 @@ python run.py configs/instant-mesh-large.yaml examples --save_video
 
 ## Uploading to virtual cluster and saving to local machine
 
-If you are using the lambda vitual clusters, I recommend using the zip cli, which lets you zip and unzip files through the cli. The lambda virtual machines do not let you zip files in their interface.
+If you are using the lambda vitual clusters, I recommend using the zip cli, which lets you zip and unzip files through the cli. The lambda virtual machines do not let you zip files in their interface, nor does it allow for you to download more than 9 files at a time.
 
 To install: 
 ```
