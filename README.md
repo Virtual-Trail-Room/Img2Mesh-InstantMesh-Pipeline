@@ -1,5 +1,6 @@
 # Img2Mesh: [InstantMesh](https://github.com/TencentARC/InstantMesh?tab=readme-ov-file)
 
+## Set up
 First, clone InstantMesh
 
 ```
@@ -32,3 +33,33 @@ $ pip install -r requiremetns.txt
 ```
 
 Now, you can follow the instructions from the [InstantMesh README](https://github.com/TencentARC/InstantMesh?tab=readme-ov-file#running-with-command-line) to run using cli
+
+## Quick Start
+For a quick start for a single file:
+```
+python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_video
+```
+
+You can also pass in an entire folder and it will make meshs of the entire folder
+
+```
+python run.py configs/instant-mesh-large.yaml examples --save_video
+```
+
+## Uploading to virtual cluster and saving to local machine
+
+If you are using the lambda vitual clusters, I recommend using the zip cli, which lets you zip and unzip files through the cli. The lambda virtual machines do not let you zip files in their interface.
+
+To install: 
+```
+$ sudo apt-get install zip
+```
+Zip: 
+```
+zip -r {filename.zip} {foldername}
+```
+
+Unzip:
+```
+unzip {filename.zip}
+```
