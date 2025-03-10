@@ -13,8 +13,8 @@ You can either download them by clicking download button on model card or use [g
 
 To install on virtual machine: 
 ```
-sudo apt-get install git-lfs
-git lfs install
+$ sudo apt-get install git-lfs
+$ git lfs install
 ```
 
 Clone models using git-lfs:
@@ -37,13 +37,13 @@ Now, you can follow the instructions from the [InstantMesh README](https://githu
 ## Quick Start
 For a quick start for a single file:
 ```
-python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_video
+$ python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_video
 ```
 
 You can also pass in an entire folder and it will make meshs of the entire folder
 
 ```
-python run.py configs/instant-mesh-large.yaml examples --save_video
+$ python run.py configs/instant-mesh-large.yaml examples --save_video
 ```
 
 ## Uploading to virtual cluster and saving to local machine
@@ -56,10 +56,10 @@ $ sudo apt-get install zip
 ```
 Zip: 
 ```
-zip -r {filename.zip} {foldername}
+$ zip -r {filename.zip} {foldername}
 ```
 
 Unzip:
 ```
-unzip {filename.zip}
+$ unzip {filename.zip}
 ```
