@@ -10,6 +10,13 @@ Then, download model weights from the [model card](https://huggingface.co/Tencen
 
 You can either download them by clicking download button on model card or use [git lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) to download through cli
 
+To install on virtual machine: 
+```
+sudo apt-get install git-lfs
+git lfs install
+```
+
+Clone models using git-lfs:
 ```
 $ git lfs clone https://huggingface.co/TencentARC/InstantMesh ckpts
 ```
